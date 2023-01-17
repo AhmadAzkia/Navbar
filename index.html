@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas 13</title>
+    <link rel="stylesheet" href="w3.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="hero">
+      <img src="PUBG.jpg" alt="">
+    </div>
+
+    <div class="w3-bar" style="background-color: #a0144f;">
+        <button class="w3-bar-item w3-button" onclick="opensquad('HOME')" style="color: whitesmoke;"><img src="Home.png" alt="" height="20px" width="20px"></button>
+        <button class="w3-bar-item w3-button" onclick="opensquad('BIGETRON')" style="color: whitesmoke;">BIGETRON</button>
+        <button class="w3-bar-item w3-button" onclick="opensquad('EVOS')" style="color: whitesmoke;">EVOS</button>
+        <button class="w3-bar-item w3-button" onclick="opensquad('AURA')" style="color: whitesmoke;">AURA</button>
+        <button class="w3-bar-item w3-button" onclick="opensquad('ALTEREGO')" style="color: whitesmoke;">ALTER EGO</button>
+        <div class="w3-dropdown-hover">
+          <button class="w3-button" style="color: whitesmoke;">TOURNAMENT</button>
+          <div class="w3-dropdown-content w3-bar-block w3-border">
+            <button onclick="opensquad('ID')" class="w3-bar-item w3-button">PMPL ID</button>
+            <button onclick="opensquad('SEA')" class="w3-bar-item w3-button">PMPL SEA</button>
+            <button onclick="opensquad('PMGC')" class="w3-bar-item w3-button">PMGC</button>
+          </div>
+        </div>
+    </div>
+
+    <div id="HOME" class="w3-container squad">
+        <h1 class="w3-container">Profile</h1>
+        <table class="w3-container">
+        <tr>
+          <td>
+            Nama
+            <td> : Ahmad Azkia F.</td>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            NIM
+            <td> : 10122065</td>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Kelas
+            <td> : IF 2</td>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Mata Kuliah
+            <td> : Pemrograman WEB</td>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- BIGETRON -->
+    <div id="BIGETRON" class="w3-container squad" style="display: none;">
+      <h1>BIGETRON</h1>
+    <img src="" alt="">
+    </div>
+
+    <!-- EVOS -->
+    <div id="EVOS" class="w3-container squad" style="display: none;">
+      <h1>EVOS</h1>
+    </div>
+
+    <!-- AURA -->
+    <div id="AURA" class="w3-container squad" style="display: none;">
+      <h1>AURA</h1>
+    </div>
+
+    <!-- ALTER EGO -->
+    <div id="ALTEREGO" class="w3-container squad" style="display: none;">
+      <h1>ALTER EGO</h1>
+    </div>
+
+    <!-- TOURNAMENT -->
+    <!-- PMPL ID -->
+    <div id="ID" class="w3-container squad" style="display: none;">
+      <h1>PMPL ID</h1>
+    </div>
+
+    <!-- PMPL SEA -->
+    <div id="SEA" class="w3-container squad" style="display: none;">
+      <h1>PMPL SEA</h1>
+    </div>
+
+    <!-- PMGC -->
+    <div id="PMGC" class="w3-container squad" style="display: none;">
+      <h1>PMGC</h1>
+    </div>
+
+    
+  </body>
+</html>
+
+<script>
+  function opensquad(namasquad) {
+   var i;
+   var x = document.getElementsByClassName("squad");
+   for (i = 0; i < x.length; i++) {
+   x[i].style.display = "none";
+   }
+   document.getElementById(namasquad).style.display = "block";
+  }
+  </script>
